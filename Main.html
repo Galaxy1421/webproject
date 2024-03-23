@@ -1,6 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Galaxies, Nebula and stars</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophile</title>
+    <style>
+        /* CSS Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+        body {
+            font-family: "Short Stack", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        header {
+            background-color: #0c1330;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #6475bd;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            color: #fff;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .footer {
+            background-color: #6475bd;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .galaxies {
+            background-image: url('galaxies.gif');
+        }
+        .nebula {
+            background-image: url('nebula.gif');
+        }
+        .stars {
+            background-image: url('stars.gif');
+        }
+    </style>
 </head>
-<body></body>
+<body>
+    <header>
+        <h1>Aastrophile</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Galaxies</a>
+        <a href="#">Nebula</a>
+        <a href="#">Stars</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="card galaxies">
+                <h2>Galaxies</h2>
+                <p>Explore the vast galaxies of the universe.</p>
+            </div>
+            <div class="card nebula">
+                <h2>Nebula</h2>
+                <p>Discover the colorful clouds of interstellar dust.</p>
+            </div>
+            <div class="card stars">
+                <h2>Stars</h2>
+                <p>Learn about the fascinating world of stars.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Ghaida&Renad&Juri Content &copy; 2024</p>
+    </footer>
+</body>
+</html>
