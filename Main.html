@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,55 @@
     <style>
         /* CSS Styles */
         @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
         body {
             font-family: "Short Stack", cursive;
             font-weight: 400;
             font-style: normal;
         }
-        header {
-            background-color: #0c1330;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
+
+        .navbar {
             background-color: #6475bd;
-            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
         }
-        nav a {
-            float: left;
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
             color: #fff;
-            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
         }
-        nav a:hover {
-            background-color: #ddd;
+
+        .navbar a:hover {
+            background-color: #ffffff;
             color: black;
         }
+
+        .nav-links {
+            display: flex;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         .main-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .card {
             color: #fff;
             width: 300px;
@@ -55,6 +68,7 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+
         .footer {
             background-color: #6475bd;
             color: #fff;
@@ -64,31 +78,38 @@
             width: 100%;
             bottom: 0;
         }
+
         .galaxies {
             background-image: url('galaxies.gif');
         }
+
         .nebula {
             background-image: url('nebula.gif');
         }
+
         .stars {
             background-image: url('stars.gif');
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Aastrophile</h1>
-    </header>
-    
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Galaxies</a>
-        <a href="#">Nebula</a>
-        <a href="#">Stars</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Galaxies</a>
+            <a href="#">Nebula</a>
+            <a href="#">Stars</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <h1>Astrophile</h1>
     </nav>
-    
+
+
+
+
     <div class="container">
         <div class="main-content">
             <div class="card galaxies">
@@ -105,9 +126,10 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="footer">
         <p>Ghaida&Renad&Juri Content &copy; 2024</p>
     </footer>
 </body>
+
 </html>
