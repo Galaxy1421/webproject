@@ -2,157 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galaxies</title>
-    <style>
-        /* CSS Styles */
-        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxies</title>
+  <style>
+    /* CSS Styles */
+    @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
-        body {
-            font-family: "Short Stack", cursive;
-            font-weight: 400;
-            font-style: normal;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      font-family: "Short Stack", cursive;
+      font-weight: 400;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
+    }
 
-        .navbar {
-            background-color: #6475bd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+    .navbar {
+      background-color: #6475bd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
 
-        .navbar h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #fff;
-        }
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #fff;
+    }
 
-        .navbar a {
-            color: #fff;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+    .navbar a {
+      color: #fff;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-        .navbar a:hover {
-            background-color: #ffffff;
-            color: black;
-        }
+    .navbar a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
 
-        .nav-links {
-            display: flex;
-        }
+    .nav-links {
+      display: flex;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-        .card {
-            color: #fff;
-            width: 300px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+    .card {
+      color: #fff;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-        .footer {
-            background-color: #6475bd;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+    .footer {
+      background-color: #6475bd;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
-        .card {
-            color: #fff;
-            width: 300px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+    .card {
+      color: #fff;
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-        .footer {
-            background-color: #6475bd;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+    .galaxies {
+      background-image: url('galaxies.gif');
+    }
 
-        .galaxies {
-            background-image: url('galaxies.gif');
-        }
+    .nebula {
+      background-image: url('nebula.gif');
+    }
 
-        .nebula {
-            background-image: url('nebula.gif');
-        }
-
-        .stars {
-            background-image: url('stars.gif');
-        }
-    </style>
+    .stars {
+      background-image: url('stars.gif');
+    }
+    body {
+        padding-bottom: 60px; 
+    }
+  </style>
 </head>
-
 <body>
 
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Galaxies</a>
-            <a href="#">Nebula</a>
-            <a href="#">Stars</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
-        <h1>Astrophile</h1>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Galaxies</a>
+        <a href="#">Nebula</a>
+        <a href="#">Stars</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <h1>Astrophile</h1>
     </nav>
-
-    <!-- Main content of the Galaxies page -->
+   
     <div class="container">
-        <div class="main-content">
+      <div class="main-content">
+   
+        <div class="card" style="background-image: url('IC 1101.jpeg')">
+          <h2>1. IC 1101</h2>
+          <p>Still the champion, this supergiant elliptical boasts a mind-blowing diameter of 4 million light-years, dwarfing our Milky Way by a factor of 40. It's a behemoth filled with old stars and harbors the biggest black hole ever discovered.</p>
         </div>
+   
+        <div class="card" style="background-image: url('Herclules A.jpeg')">
+          <h2>2. Hercules A</h2>
+          <p>Another supergiant elliptical galaxy, a titan at 1.5 million light-years wide, which is roughly 15 times the size of our Milky Way.</p>
+        </div>
+   
+        <div class="card" style="background-image: url('MW.jpeg')">
+          <h2>3. Milky Way</h2>
+          <p>Our home galaxy! A barred spiral galaxy estimated to be around 100,000 light-years across, teeming with billions of stars, our solar system included.</p>
+        </div>
+   
+        <div class="card" style="background-image: url('A2261.jpg')">
+          <h2>4. A2261-BCG</h2>
+          <p>Rounding out the list, this supergiant elliptical galaxy stretches a million light-years wide, making it 10 times larger than our Milky Way. Interestingly, it seems to be missing a supermassive black hole at its core, an anomaly among giant galaxies.</p>
+        </div>
+   
+      </div>
     </div>
-
+   
     <footer class="footer">
-        <p>Ghaida&Renad&Juri Content © 2024</p>
+      <p>&copy; 2024 Astrophile</p>
     </footer>
-
-</body>
-
+   
+   </body>
 </html>
