@@ -13,15 +13,12 @@
             font-family: "Short Stack", cursive;
             font-weight: 400;
             font-style: normal;
-            background-image: url('back.jpg'); 
+            background-image: url('back.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
-
-
         }
-
 
         .navbar {
             background-color: #050a22;
@@ -57,6 +54,9 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
         }
 
         .main-content {
@@ -68,7 +68,7 @@
         .card {
             color: #fff;
             width: 300px;
-            margin: 20px;
+            margin: 35px; 
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -115,23 +115,20 @@
         <h1>Astrophile</h1>
     </nav>
 
-
-
-
     <div class="container">
         <div class="main-content">
             <div class="card galaxies">
                 <h2>Galaxies</h2>
                 <p>Explore the vast galaxies of the universe.</p>
             </div>
-            <div class="card nebula">
-                <h2>Nebula</h2>
-                <p>Discover the colorful clouds of interstellar dust.</p>
-            </div>
             <div class="card stars">
                 <h2>Stars</h2>
                 <p>Learn about the fascinating world of stars.</p>
             </div>
+        </div>
+        <div class="card nebula">
+            <h2>Nebula</h2>
+            <p>Discover the colorful clouds of interstellar dust.</p>
         </div>
     </div>
 
