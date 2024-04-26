@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JSProject.js"></script>
+
     <title>Nebula</title>
     <style>
         /* CSS Styles */
@@ -13,7 +15,7 @@
             font-family: "Short Stack", cursive;
             font-weight: 400;
             font-style: normal;
-            background-image: url('back.jpg'); 
+            background-image: url('back.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             margin: 0;
@@ -64,17 +66,18 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .card {
-    color: #fff;
-    width: 300px;
-    margin: 10px; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+            color: #fff;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
         .footer {
             background-color: #050a22;
@@ -89,6 +92,7 @@
         .card:nth-child(1) {
             background-image: url('ButterflyNebula.jpg');
         }
+
         .card:nth-child(2) {
             background-image: url('littledumbell.png');
         }
@@ -104,6 +108,7 @@
         .card:nth-child(5) {
             background-image: url('CrabNebula.jpg');
         }
+
         .card:nth-child(6) {
             background-image: url('NorthAmericaNebula.jpg');
         }
@@ -135,6 +140,57 @@
             color: #fff;
             font-size: 24px;
         }
+
+        .other-links {
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        /* --------------------------------------------- */
+
+        /* Style p + h  */
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+        }
+
+        .grid figure figcaption {
+            padding: 1em;
+        }
+
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+        }
+
+        /* here text p is come */
+        figure.effect-bubba p {
+            padding: 20px 1.5em;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+        }
+
+        figure.effect-bubba:hover figcaption::before,
+        figure.effect-bubba:hover figcaption::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-bubba:hover h2,
+        figure.effect-bubba:hover p {
+            opacity: 5;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        /* --------------------------------------------- */
     </style>
 </head>
 
@@ -146,8 +202,8 @@
             <a href="galaxies.html">Galaxies</a>
             <a href="Nebula.html">Nebula</a>
             <a href="Stars.html">Stars</a>
+            <a href="zoom.html">Zoom</a>
             <a href="ReferenceAndAboutUs.html">About</a>
-            <a href="">Contact</a>
         </div>
         <h1>Astrophile</h1>
     </nav>
@@ -156,44 +212,148 @@
         <div class="main-content">
             <div class="nebula-info">
                 <h2>ᯓ★ What is a Nebula?</h2>
-                <p>A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. For this reason, some nebulae are called "star nurseries."</p>
+                <p>A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the
+                    gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are
+                    regions where new stars are beginning to form. For this reason, some nebulae are called "star
+                    nurseries."</p>
             </div>
             <div class="how-stars-form">
                 <h2>ᯓ★ How do stars form in a nebula?</h2>
-                <p>Nebulae are made of dust and gases—mostly hydrogen and helium. The dust and gases in a nebula are very spread out, but gravity can slowly begin to pull together clumps of dust and gas. As these clumps get bigger and bigger, their gravity gets stronger and stronger. Eventually, the clump of dust and gas gets so big that it collapses from its own gravity. The collapse causes the material at the center of the cloud to heat up-and this hot core is the beginning of a star.</p>
+                <p>Nebulae are made of dust and gases—mostly hydrogen and helium. The dust and gases in a nebula are
+                    very spread out, but gravity can slowly begin to pull together clumps of dust and gas. As these
+                    clumps get bigger and bigger, their gravity gets stronger and stronger. Eventually, the clump of
+                    dust and gas gets so big that it collapses from its own gravity. The collapse causes the material at
+                    the center of the cloud to heat up-and this hot core is the beginning of a star.</p>
             </div>
         </div>
         <h2 class="section-title">⋆⭒˚.⋆ These are some interesting nebulae ⋆⭒˚.⋆</h2>
         <div class="main-content">
+
+            <!-- onclick="return alert('Please click on OK to continue.');" -->
+
             <div class="card nebula-info">
-                <h2>Butterfly Nebula</h2>
-                <p><strong>The Butterfly Nebula</strong> also calles NGC 6302  is a bipolar planetary nebula, Named for its resemblance to a butterfly, the nebula has a wingspan that stretches three light-years across.NGC 6302 lies within our Milky Way galaxy, roughly 3,800 light-years away </p>
+                <figure class="effect-bubba">
+
+                    <a href="https://www.constellation-guide.com/butterfly-nebula/" id="buttonClicked" target="_blank"
+                        title="More curious?" class="other-links">
+
+                        <h2> <span> Butterfly Nebula </span> </h2>
+                        <p><strong>The Butterfly Nebula</strong> also calles NGC 6302 is a bipolar planetary nebula,
+                            Named for its resemblance to a butterfly, the nebula has a wingspan that stretches three
+                            light-years across.NGC 6302 lies within our Milky Way galaxy, roughly 3,800 light-years away
+                        </p>
+                    </a>
+
+                </figure>
+                <br>
+                <a href="Zoom.htm"> <input type="button" value="Video" /> </a>
             </div>
+        
+
             <div class="card nebula-info">
-                <h2>the Little Dumbbell Nebula</h2>
-                <p><strong>the Little Dumbbell Nebula</strong>, also known as Messier 76, or M76,The name comes from its shape that is a two-lobed structure of colorful, mottled, glowing gases resembling a balloon that’s been pinched around a middle waist.</p>
+
+                <figure class="effect-bubba">
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2024/04/Little_Dumbbell_Nebula_M76"
+                        id="buttonClicked2" target="_blank" title="More curious?" class="other-links">
+
+                        <h2>the Little Dumbbell Nebula</h2>
+                        <p><strong>the Little Dumbbell Nebula</strong>, also known as Messier 76, or M76,The name comes
+                            from its shape that is a two-lobed structure of colorful, mottled, glowing gases resembling
+                            a balloon that’s been pinched around a middle waist.</p>
+
+                    </a>
+                </figure>
+
+                <a href="Zoom.htm"> <input type="button" value="Video" /> </a>
+
             </div>
+
+
             <div class="card nebula-info">
-                <h2>Helix Nebula</h2>
-                <p><strong>The Helix Nebula</strong>, aka NGC 7293 The Helix, is a tube-shaped planetary nebula, an expanding shell of gas around a dying star. located in the constellation Aquarius, is among the closest bright planetary nebulae at a distance of about 655 light years. </p>
+
+                <figure class="effect-bubba">
+                    <a href="https://www.nasa.gov/image-article/helix-nebula-unraveling-seams/" id="buttonClicked3"
+                        target="_blank" title="More curious?" class="other-links">
+                        <h2>Helix Nebula</h2>
+                        <p><strong>The Helix Nebula</strong>, aka NGC 7293 The Helix, is a tube-shaped planetary nebula,
+                            an expanding shell of gas around a dying star. located in the constellation Aquarius, is
+                            among the closest bright planetary nebulae at a distance of about 655 light years. </p>
+
+                    </a>
+                </figure>
+                <br>
+                <br>
+                <br>
+                <a href="Zoom.htm"> <input type="button" value="Video" /> </a>
             </div>
+
+
             <div class="card nebula-info">
-                <h2>The Eagle Nebula</h2>
-                <p><br><strong>The Eagle Nebula</strong>, also known as the Star Queen Nebula or Messier 16 (M16 for short), is a cluster of stars and an area of active star formation about 5,700 light-years from Earth.</p>
+
+                <figure class="effect-bubba">
+                    <a href="https://www.space.com/16396-eagle-nebula-m16-hubble-images-pillars-of-creation.html"
+                        id="buttonClicked4" target="_blank" title="More curious?" class="other-links">
+                        <h2>The Eagle Nebula</h2>
+                        <p><br><strong>The Eagle Nebula</strong>, also known as the Star Queen Nebula or Messier 16 (M16
+                            for short), is a cluster of stars and an area of active star formation about 5,700
+                            light-years from Earth.</p>
+
+                    </a>
+                </figure>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="Zoom.htm"> <input type="button" value="Video" /> </a>
             </div>
+
+
             <div class="card nebula-info">
-                <h2>Crab Nebula</h2>
-                <p>In 1054, Chinese astronomers took notice of a “guest star” that was, for nearly a month, visible in the daytime sky.<br>The “guest star” they observed was actually a supernova explosion, which gave rise to the<strong> Crab Nebula</strong>, a six-light-year-wide remnant of the violent event.</p>
+
+                <figure class="effect-bubba">
+                    <a href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/"
+                        id="buttonClicked5" target="_blank" title="More curious?" class="other-links">
+                        <h2>Crab Nebula</h2>
+                        <p>In 1054, Chinese astronomers took notice of a “guest star” that was, for nearly a month,
+                            visible in the daytime sky.<br>The “guest star” they observed was actually a supernova
+                            explosion, which gave rise to the<strong> Crab Nebula</strong>, a six-light-year-wide
+                            remnant of the violent event.</p>
+
+                    </a>
+                </figure>
+                <br>
+                <a href="Zoom.htm"> <input type="button" value="Video" /> </a>
             </div>
+
+
             <div class="card nebula-info">
-                <h2>The North America Nebula</h2>
-                <p><strong>NGC 7000</strong> is known as the North America Nebula due to its similarity in shape to the geographical outline of its namesake continent.</p>
+
+                <figure class="effect-bubba">
+                    <a href="https://www.skyatnightmagazine.com/astrophotography/nebulae/north-america-nebula-ngc-7000"
+                        id="buttonClicked6" target="_blank" title="More curious?" class="other-links">
+                        <h2>The North America Nebula</h2>
+                        <p><strong>NGC 7000</strong> is known as the North America Nebula due to its similarity in shape
+                            to the geographical outline of its namesake continent.</p>
+
+                    </a>
+                </figure>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="Zoom.htm"> <input type="button" value="Video" /> </a>
             </div>
+
+
         </div>
     </div>
 
+
     <footer class="footer">
         <p>Ghaida&Renad&Juri Content &copy; 2024</p>
+
     </footer>
 
 </body>
