@@ -2,168 +2,218 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galaxies</title>
-  <style>
-    /* CSS Styles */
-    @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxies</title>
+    <style>
+        /* CSS Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
-    body {
-      font-family: "Short Stack", cursive;
-      font-weight: 400;
-      font-style: normal;
-      margin: 0;
-      padding: 0;
-    }
+        body {
+            font-family: "Short Stack", cursive;
+            font-weight: 400;
+            font-style: normal;
+            background-image: url('back.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
 
-    .navbar {
-      background-color: #6475bd;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-    }
+        .navbar {
+            background-color: #050a22;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
 
-    .navbar h1 {
-      margin: 0;
-      font-size: 24px;
-      color: #fff;
-    }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+        }
 
-    .navbar a {
-      color: #fff;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
+        .navbar a {
+            color: #fff;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-    .navbar a:hover {
-      background-color: #ffffff;
-      color: black;
-    }
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
 
-    .nav-links {
-      display: flex;
-    }
+        .nav-links {
+            display: flex;
+        }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .main-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-    .card {
-      color: #fff;
-      width: 300px;
-      margin: 20px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+        .card {
+            color: #fff;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-    .footer {
-      background-color: #6475bd;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
+        .footer {
+            background-color: #050a22;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 20px;
+        }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+        /* Background images for each card */
+        .card:nth-child(1) {
+            background-image: url('Milkyway.jpg');
+        }
 
-    .main-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+        .card:nth-child(2) {
+            background-image: url('AntennaeGalaxies.jpg');
+        }
 
-    .card {
-      color: #fff;
-      width: 300px;
-      margin: 20px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+        .card:nth-child(3) {
+            background-image: url('Galaxy3.jpg');
+        }
 
-    .galaxies {
-      background-image: url('galaxies.gif');
-    }
+        .card:nth-child(4) {
+            background-image: url('Galaxy4.jpg');
+        }
 
-    .nebula {
-      background-image: url('nebula.gif');
-    }
+        .card:nth-child(5) {
+            background-image: url('Galaxy5.jpg');
+        }
 
-    .stars {
-      background-image: url('stars.gif');
-    }
-    body {
-        padding-bottom: 60px; 
-    }
-  </style>
+        /* Style for description */
+        .galaxy-info,
+        .more-about-galaxies {
+            border: 1px solid #406ab2;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .galaxy-info h2,
+        .more-about-galaxies h2 {
+            margin-top: 0;
+        }
+
+        .galaxy-info p,
+        .more-about-galaxies p {
+            margin: 0;
+        }
+
+        .section-title {
+            border-top: 1px solid #406ab2;
+            padding-top: 20px;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
 </head>
+
 <body>
 
     <nav class="navbar">
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Galaxies</a>
-        <a href="#">Nebula</a>
-        <a href="#">Stars</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
-      <h1>Astrophile</h1>
+        <div class="nav-links">
+            <a href="Main.html">Home</a>
+            <a href="galaxies.html">Galaxies</a>
+            <a href="Nebula.html">Nebula</a>
+            <a href="Stars.html">Stars</a>
+            <a href="ReferenceAndAboutUs.html">About</a>
+            <a href="">Contact</a>
+        </div>
+        <h1>Astrophile</h1>
     </nav>
-   
+
     <div class="container">
-      <div class="main-content">
-   
-        <div class="card" style="background-image: url('IC 1101.jpeg')">
-          <h2>1. IC 1101</h2>
-          <p>Still the champion, this supergiant elliptical boasts a mind-blowing diameter of 4 million light-years, dwarfing our Milky Way by a factor of 40. It's a behemoth filled with old stars and harbors the biggest black hole ever discovered.</p>
+        <div class="main-content">
+            <div class="galaxy-info">
+                <h2>ᯓ★ What Is a Galaxy?</h2>
+                <p>A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems, all held together by gravity. Our galaxy is called the Milky Way, and it contains our solar system and planet Earth.</p>
+            </div>
+            <div class="more-about-galaxies">
+                <h2>ᯓ★ Galaxies shapes</h2>
+                <p>Some galaxies are spiral-shaped like ours. They have curved
+                    arms that make it look like a pinwheel. Other galaxies are
+                    smooth and oval shaped. They're called elliptical galaxies. And
+                    there are also galaxies that aren't spirals or ovals. They have
+                    irregular shapes and look like blobs. The light that we see from
+                    each of these galaxies comes from the stars inside it.
+                    <br><br>
+                    <h2>ᯓ★ How many galaxies?</h2>
+                    <p>There are many galaxies besides ours, though. There are so
+                        many, we can't even count them all yet! The Hubble Space
+                        Telescope looked at a small patch of space for 12 days and
+                        found 10,000 galaxies, of all sizes, shapes, and colors. Some
+                        scientists think there could be as many as one hundred billion
+                        galaxies in the universe.</p>
+                    <br><br>
+                    <h2>ᯓ★ More About galaxies</h2>
+                    <p>Sometimes galaxies get too close and smash into each other.
+                        Our Milky Way galaxy will someday bump into Andromeda, our
+                        closest galactic neighbor. But don't worry. It won't happen for
+                        about five billion years. But even if it happened tomorrow, you
+                        might not notice. Galaxies are so big and spread out at the ends
+                        that even though galaxies bump into each other, the planets and
+                        solar systems often don't get close to colliding.</p>
+                </p>
+            </div>
         </div>
-   
-        <div class="card" style="background-image: url('Herclules A.jpeg')">
-          <h2>2. Hercules A</h2>
-          <p>Another supergiant elliptical galaxy, a titan at 1.5 million light-years wide, which is roughly 15 times the size of our Milky Way.</p>
+        <h2 class="section-title">⋆⭒˚.⋆ These are some fascinating galaxies ⋆⭒˚.⋆</h2>
+        <div class="main-content">
+            <div class="card galaxy-info">
+                <h2>Milky Way</h2>
+                <p>Our home galaxy is called the Milky Way. It’s a spiral galaxy with a disk of stars spanning more than 100,000 light-years. Earth is located along one of the galaxy’s spiral arms, about halfway from the center. Our solar system takes about 240 million years to orbit the Milky Way just once.<br><br>From our perspective on Earth, the Milky Way looks like a faint, milky band of light arcing across the entire sky, which is how it got its name.</p>
+            </div>
+            <div class="card galaxy-info">
+                <h2>Antennae Galaxies</h2>
+                <p>NGC 4038/4039<br></p>
+            </div>
+            <div class="card galaxy-info">
+                <h2>Galaxy 3</h2>
+                <p>Description of the galaxy goes here...</p>
+            </div>
+            <div class="card galaxy-info">
+                <h2>Galaxy 4</h2>
+                <p>Description of the galaxy goes here...</p>
+            </div>
+            <div class="card galaxy-info">
+                <h2>Galaxy 5</h2>
+                <p>Description of the galaxy goes here...</p>
+            </div>
         </div>
-   
-        <div class="card" style="background-image: url('MW.jpeg')">
-          <h2>3. Milky Way</h2>
-          <p>Our home galaxy! A barred spiral galaxy estimated to be around 100,000 light-years across, teeming with billions of stars, our solar system included.</p>
-        </div>
-   
-        <div class="card" style="background-image: url('A2261.jpg')">
-          <h2>4. A2261-BCG</h2>
-          <p>Rounding out the list, this supergiant elliptical galaxy stretches a million light-years wide, making it 10 times larger than our Milky Way. Interestingly, it seems to be missing a supermassive black hole at its core, an anomaly among giant galaxies.</p>
-        </div>
-   
-      </div>
     </div>
-   
+
     <footer class="footer">
-      <p>&copy; 2024 Astrophile</p>
+        <p>Ghaida&Renad&Juri Content &copy; 2024</p>
     </footer>
-   
-   </body>
+
+</body>
+
 </html>

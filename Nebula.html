@@ -13,12 +13,15 @@
             font-family: "Short Stack", cursive;
             font-weight: 400;
             font-style: normal;
+            background-image: url('back.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
             margin: 0;
             padding: 0;
         }
 
         .navbar {
-            background-color: #6475bd;
+            background-color: #050a22;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -51,6 +54,9 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .main-content {
@@ -58,115 +64,130 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-
         .card {
-            color: #fff;
-            width: 300px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+    color: #fff;
+    width: 300px;
+    margin: 10px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
         .footer {
-            background-color: #6475bd;
+            background-color: #050a22;
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
             width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        /* Background images for each card */
+        .card:nth-child(1) {
+            background-image: url('ButterflyNebula.jpg');
+        }
+        .card:nth-child(2) {
+            background-image: url('littledumbell.png');
         }
 
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .card:nth-child(3) {
+            background-image: url('HelixNebula.jpg');
         }
 
-        .card {
-            color: #fff;
-            width: 300px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
+        .card:nth-child(4) {
+            background-image: url('TheEagleNebula.jpg');
+        }
+
+        .card:nth-child(5) {
+            background-image: url('CrabNebula.jpg');
+        }
+
+        /* Style for description */
+        .nebula-info,
+        .how-stars-form {
+            border: 1px solid #406ab2;
             border-radius: 5px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .footer {
-            background-color: #6475bd;
+            padding: 20px;
+            margin-bottom: 20px;
             color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
 
-        .galaxies {
-            background-image: url('galaxies.gif');
+        .nebula-info h2,
+        .how-stars-form h2 {
+            margin-top: 0;
         }
 
-        .nebula {
-            background-image: url('nebula.gif');
+        .nebula-info p,
+        .how-stars-form p {
+            margin: 0;
         }
 
-        .stars {
-            background-image: url('stars.gif');
+        .section-title {
+            border-top: 1px solid #406ab2;
+            padding-top: 20px;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 24px;
         }
     </style>
-</head>
 </head>
 
 <body>
 
     <nav class="navbar">
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Galaxies</a>
-            <a href="#">Nebula</a>
-            <a href="#">Stars</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="Main.html">Home</a>
+            <a href="galaxies.html">Galaxies</a>
+            <a href="Nebula.html">Nebula</a>
+            <a href="Stars.html">Stars</a>
+            <a href="ReferenceAndAboutUs.html">About</a>
+            <a href="">Contact</a>
         </div>
         <h1>Astrophile</h1>
     </nav>
 
-    <!-- Main content of the Nebula page -->
     <div class="container">
         <div class="main-content">
+            <div class="nebula-info">
+                <h2>ᯓ★ What is a Nebula?</h2>
+                <p>A nebula is a giant cloud of dust and gas in space. Some nebulae (more than one nebula) come from the gas and dust thrown out by the explosion of a dying star, such as a supernova. Other nebulae are regions where new stars are beginning to form. For this reason, some nebulae are called "star nurseries."</p>
+            </div>
+            <div class="how-stars-form">
+                <h2>ᯓ★ How do stars form in a nebula?</h2>
+                <p>Nebulae are made of dust and gases—mostly hydrogen and helium. The dust and gases in a nebula are very spread out, but gravity can slowly begin to pull together clumps of dust and gas. As these clumps get bigger and bigger, their gravity gets stronger and stronger. Eventually, the clump of dust and gas gets so big that it collapses from its own gravity. The collapse causes the material at the center of the cloud to heat up-and this hot core is the beginning of a star.</p>
+            </div>
+        </div>
+        <h2 class="section-title">⋆⭒˚.⋆ These are some interesting nebulae ⋆⭒˚.⋆</h2>
+        <div class="main-content">
+            <div class="card nebula-info">
+                <h2>Butterfly Nebula</h2>
+                <p>NGC 6302</p>
+            </div>
+            <div class="card nebula-info">
+                <h2>the Little Dumbbell Nebula</h2>
+                <p>Messier 76<br></p>
+            </div>
+            <div class="card nebula-info">
+                <h2>Helix Nebula</h2>
+                <p>NGC 7293</p>
+            </div>
+            <div class="card nebula-info">
+                <h2>The Eagle Nebula</h2>
+                <p>Description..</p>
+            </div>
+            <div class="card nebula-info">
+                <h2>Crab Nebula</h2>
+                <p>NGC 1952</p>
+            </div>
         </div>
     </div>
 
-    <div class="footer">
-    </div>
-</body>
-
-</html>
-
-
-
-<div class="container">
-    <div class="main-content">
-
-    </div>
-</div>
-
-<footer class="footer">
-    <p>Ghaida&Renad&Juri Content &copy; 2024</p>
-</footer>
+    <footer class="footer">
+        <p>Ghaida&Renad&Juri Content &copy; 2024</p>
+    </footer>
 
 </body>
 
