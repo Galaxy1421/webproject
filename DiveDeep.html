@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrophile</title>
+    <title>Dive Deep</title>
     <style>
         /* CSS Styles */
         @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
@@ -13,7 +14,7 @@
             font-family: "Short Stack", cursive;
             font-weight: 400;
             font-style: normal;
-            background-image: url('back.jpg');
+            background-image: url('back.jpg'); 
             background-size: cover;
             background-repeat: no-repeat;
             margin: 0;
@@ -56,7 +57,7 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center items horizontally */
+            align-items: center;
         }
 
         .main-content {
@@ -68,9 +69,9 @@
         .card {
             color: #fff;
             width: 300px;
-            margin: 35px; 
+            margin: 10px;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid #406ab2;
             border-radius: 5px;
             background-size: cover;
             background-repeat: no-repeat;
@@ -82,21 +83,38 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
             width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
 
-        .galaxies {
-            background-image: url('galaxies.gif');
+        /* Background images for each card */
+        .card:nth-child(1) {
+            background-image: url('h.jpg');
         }
 
-        .nebula {
-            background-image: url('nebula.gif');
+        /* Style for description */
+        .Dive-deep{
+            border: 1px solid #406ab2;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff;
         }
 
-        .stars {
-            background-image: url('stars.gif');
+        .Dive-deep h2 {
+            margin-top: 0;
+        }
+
+        .Dive-deep p {
+            margin: 0;
+        }
+
+        .section-title {
+            border-top: 1px solid #406ab2;
+            padding-top: 20px;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -115,26 +133,41 @@
         <h1>Astrophile</h1>
     </nav>
 
+
     <div class="container">
         <div class="main-content">
-            <div class="card galaxies">
-                <h2>Galaxies</h2>
-                <p>Explore the vast galaxies of the universe.</p>
-            </div>
-            <div class="card stars">
-                <h2>Stars</h2>
-                <p>Learn about the fascinating world of stars.</p>
+            <div class="Dive-deep">
+                <h2>ᯓ★ What do we mean by Dive deep?</h2>
+                <p></p>
             </div>
         </div>
-        <div class="card nebula">
-            <h2>Nebula</h2>
-            <p>Discover the colorful clouds of interstellar dust.</p>
+        <h2 class="section-title">⋆⭒˚.⋆ Zoom into ⋆⭒˚.⋆</h2>
+        <div class="main-content">
+            <div class="card zoom-into">
+                <h2>the Little Dumbbell Nebula</h2>
+            </div>
+            <div class="card zoom-into">
+                <h2>Butterfly Nebula </h2>
+            </div>
+            <div class="card zoom-into">
+                <h2>Helix Nebula</h2>
+            </div>
+            <div class="card zoom-into">
+                <h2>Crab Nebula</h2>
+            </div>
+            <div class="card zoom-into">
+                <h2>The Eagle Nebula</h2>
+            </div>
+            <div class="card zoom-into">
+                <h2>The penguin & the egg Galaxy</h2>
+            </div>
         </div>
     </div>
-
+    
     <footer class="footer">
         <p>Ghaida&Renad&Juri Content &copy; 2024</p>
     </footer>
+
 </body>
 
 </html>
