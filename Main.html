@@ -8,7 +8,10 @@
     <style>
         /* CSS Styles */
         @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
-
+        audio::-internal-controls {
+            display: none;
+          }
+      
         body {
             font-family: "Short Stack", cursive;
             font-weight: 400;
@@ -18,6 +21,12 @@
             background-repeat: no-repeat;
             margin: 0;
             padding: 0;
+            cursor: url('Star Normal.cur'), default;
+
+        }
+
+        .clickable-element {
+            cursor: url('Star Link.cur'), pointer;
         }
 
         .navbar {
@@ -101,19 +110,20 @@
     </style>
 </head>
 
-<body>
+<body style="cursor: url('Star Normal.cur')">
 
+  
     <nav class="navbar">
         <div class="nav-links">
-            <a href="Main.html">Home</a>
-            <a href="galaxies.html">Galaxies</a>
-            <a href="Nebula.html">Nebula</a>
-            <a href="Stars.html">Stars</a>
-            <a href="DiveDeep.html">Dive Deep</a>
-            <a href="ReferenceAndAboutUs.html">About us</a>
+            <a href="Main.html" style="cursor: url('Star Link.cur'), pointer;">Home</a>
+            <a href="galaxies.html" style="cursor: url('Star Link.cur'), pointer;">Galaxies</a>
+            <a href="Nebula.html" style="cursor: url('Star Link.cur'), pointer;">Nebula</a>
+            <a href="Stars.html" style="cursor: url('Star Link.cur'), pointer;">Stars</a>
+            <a href="DiveDeep.html" style="cursor: url('Star Link.cur'), pointer;">Dive Deep</a>
+            <a href="ReferenceAndAboutUs.html" style="cursor: url('Star Link.cur'), pointer;">About us</a>
         </div>
         <h1>Astrophile</h1>
-    </nav>
+    </nav>4
 
     <div class="container">
         <div class="main-content">
