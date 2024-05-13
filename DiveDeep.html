@@ -1,182 +1,220 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dive Deep</title>
-    <style>
-        
-        /* CSS Styles */
-        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
-        audio::-internal-controls {
-            display: none;
-          }
-      
-        body {
-            font-family: "Short Stack", cursive;
-            font-weight: 400;
-            font-style: normal;
-            background-image: url('back.jpg'); 
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            cursor: url('Star Normal.cur'), default;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dive Deep</title>
+  <style>
+    /* CSS Styles */
+    @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+    audio::-internal-controls {
+      display: none;
+    }
 
+    body {
+      font-family: "Short Stack", cursive;
+      font-weight: 400;
+      font-style: normal;
+      background-image: url('back.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      cursor: url('Star Normal.cur'), default;
+    }
+
+    .clickable-element {
+      cursor: url('Star Link.cur'), pointer;
+    }
+
+    .navbar {
+      background-color: #050a22;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .navbar a {
+      color: #fff;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .card {
+      color: #fff;
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #406ab2;
+      border-radius: 5px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(64, 106, 178, 0.2);
+      cursor: pointer; /* Make cards clickable */
+    }
+
+    .footer {
+      background-color: #050a22;
+      color: #fff;
+      text-align: center;
+      padding: 1px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    /* Background images for each card */
+    .card:nth-child(1) {
+        background-color: rgba(64, 106, 178, 0.2);
         }
 
-        .clickable-element {
-            cursor: url('Star Link.cur'), pointer;
-        }
+    /* Style for description */
+    .Dive-deep {
+      border: 1px solid #406ab2;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
 
-        .navbar {
-            background-color: #050a22;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+    .Dive-deep h2 {
+      margin-top: 0;
+    }
 
-        .navbar h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #fff;
-        }
+    .Dive-deep p {
+      margin: 0;
+    }
 
-        .navbar a {
-            color: #fff;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .navbar a:hover {
-            background-color: #ffffff;
-            color: black;
-        }
-
-        .nav-links {
-            display: flex;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .main-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .card {
-            color: #fff;
-            width: 300px;
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid #406ab2;
-            border-radius: 5px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .footer {
-            background-color: #050a22;
-            color: #fff;
-            text-align: center;
-            padding: 1px;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        /* Background images for each card */
-        .card:nth-child(1) {
-            background-image: url('h.jpg');
-        }
-
-        /* Style for description */
-        .Dive-deep{
-            border: 1px solid #406ab2;
-            border-radius: 5px;
-            padding: 20px;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-
-        .Dive-deep h2 {
-            margin-top: 0;
-        }
-
-        .Dive-deep p {
-            margin: 0;
-        }
-
-        .section-title {
-            border-top: 1px solid #406ab2;
-            padding-top: 20px;
-            margin-top: 20px;
-            color: #fff;
-            font-size: 24px;
-        }
-    </style>
+    .section-title {
+      border-top: 1px solid #406ab2;
+      padding-top: 20px;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 24px;
+    }
+  </style>
 </head>
-
 <body style="cursor: url('Star Normal.cur')">
-
-  
     <nav class="navbar">
-        <div class="nav-links">
-            <a href="Main.html" style="cursor: url('Star Link.cur'), pointer;">Home</a>
-            <a href="galaxies.html" style="cursor: url('Star Link.cur'), pointer;">Galaxies</a>
-            <a href="Nebula.html" style="cursor: url('Star Link.cur'), pointer;">Nebula</a>
-            <a href="Stars.html" style="cursor: url('Star Link.cur'), pointer;">Stars</a>
-            <a href="DiveDeep.html" style="cursor: url('Star Link.cur'), pointer;">Dive Deep</a>
-            <a href="ReferenceAndAboutUs.html" style="cursor: url('Star Link.cur'), pointer;">About us</a>
-        </div>
-        <h1>Astrophile</h1>
+      <div class="nav-links">
+        <a href="Main.html" style="cursor: url('Star Link.cur'), pointer;">Home</a>
+        <a href="galaxies.html" style="cursor: url('Star Link.cur'), pointer;">Galaxies</a>
+        <a href="Nebula.html" style="cursor: url('Star Link.cur'), pointer;">Nebula</a>
+        <a href="Stars.html" style="cursor: url('Star Link.cur'), pointer;">Stars</a>
+        <a href="DiveDeep.html" style="cursor: url('Star Link.cur'), pointer;">Dive Deep</a>
+        <a href="ReferenceAndAboutUs.html" style="cursor: url('Star Link.cur'), pointer;">About us</a>
+      </div>
+      <h1>Astrophile</h1>
     </nav>
-
-    <div class="container">
-        <div class="main-content">
-            <div class="Dive-deep">
-                <h2>ᯓ★ What do we mean by Dive deep?</h2>
-                <p>A type of clip called <strong>Zoom into</strong> that depicts space for us from a distant point and dives into the heart of the nebula or galaxy. It captures the beauty of the universe for you, so we loved including it in our project.</p>
-            </div>
+  
+    <div class="container" >
+      <div class="main-content">
+        <div class="Dive-deep">
+          <h2>ᯓ★ What do we mean by Dive deep?</h2>
+          <p>A type of clip called <strong>Zoom into</strong> that depicts space for us from a distant point and dives into the heart of the nebula or galaxy. It captures the beauty of the universe for you, so we loved including it in our project.</p>
         </div>
-        <h2 class="section-title">⋆⭒˚.⋆ Let's dive into some galaxies and nebulae together ⋆⭒˚.⋆</h2>
-        <div class="main-content">
-            <div class="card zoom-into">
-                <h2>the Little Dumbbell Nebula</h2>
-            </div>
-            <div class="card zoom-into">
-                <h2>Butterfly Nebula</h2>
-            </div>
-            <div class="card zoom-into">
-                <h2>Helix Nebula</h2>
-            </div>
-            <div class="card zoom-into">
-                <h2>Crab Nebula</h2>
-            </div>
-            <div class="card zoom-into">
-                <h2>The Eagle Nebula</h2>
-            </div>
-            <div class="card zoom-into">
-                <h2>The penguin & the egg Galaxy</h2>
-            </div>
+      </div>
+      <h2 class="section-title">⋆⭒˚.⋆ Let's dive into some galaxies and nebulae together ⋆⭒˚.⋆</h2>
+      <div class="main-content" >
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">the Little Dumbbell Nebula</h2>
         </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">Butterfly Nebula</h2>
+        </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">Helix Nebula</h2>
+        </div>
+        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">Crab Nebula</h2>
+        </div>
+        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">The Eagle Nebula</h2>
+        </div>
+        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">The penguin & the egg Galaxy</h2>
+        </div>
+        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
+          <h2 style="cursor: url('Star Link.cur'), pointer;">The North America Nebula</h2>
+        </div>
+      </div>
+  
     </div>
-
+  
     <footer class="footer">
-        <p>Ghaida&Renad&Juri Content &copy; 2024</p>
+      <p>Ghaida&Renad&Juri Content &copy; 2024</p>
     </footer>
-</body>
-
-</html>
+  
+    <script>
+      // Script for clickable cards
+      document.querySelectorAll('.card').forEach(function(card) {
+        card.addEventListener('click', function() {
+          var nebulaName = card.querySelector('h2').textContent;
+          var videoUrl = "https://www.youtube.com/watch?v=";
+            
+          switch (nebulaName) {
+            case 'the Little Dumbbell Nebula':
+              videoUrl += '6vo9tFsUn8s';
+              break;
+            case 'Butterfly Nebula':
+              videoUrl += '3YsON79Rv3U';
+              break;
+            case 'Helix Nebula':
+              videoUrl += 'UwAKNMC2PeM';
+              break;
+            case 'The Eagle Nebula':
+              videoUrl += '6hdVfzTb5pU';
+              break;
+            case 'Crab Nebula':
+              videoUrl += 'oJ9qJFQ0EE8';
+              break;
+            case 'The penguin & the egg Galaxy':
+              // Handle this case if needed
+              break;
+            case 'The North America Nebula':
+              videoUrl += 'pZD8XQyuBCY';
+              break;
+            default:
+              console.log('Unknown nebula:', nebulaName);
+              return;
+          }
+            
+          window.location.href = videoUrl;
+        });
+      });
+    </script>
+  </body>
+  
