@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JSProject.js"></script>
+
     <title>Stars</title>
     <style>
         /* CSS Styles */
@@ -144,6 +146,52 @@
             color: #fff;
             font-size: 24px;
         }
+
+        .other-links {
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+        }
+
+        .grid figure figcaption {
+            padding: 1em;
+        }
+
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+        }
+
+        /* here text p is come */
+        figure.effect-bubba p {
+            padding: 20px 1.5em;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+        }
+
+        figure.effect-bubba:hover figcaption::before,
+        figure.effect-bubba:hover figcaption::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-bubba:hover h2,
+        figure.effect-bubba:hover p {
+            opacity: 5;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
     </style>
 </head>
 
@@ -179,27 +227,57 @@
             <p>At the end of a star's life, its core runs out of hydrogen, leading to a collapse that triggers fusion of helium into heavier elements. Low-mass stars become giants and shed their outer layers, forming planetary <strong>nebulae</strong> (⸝⸝•ᴗ•⸝⸝), leaving behind a white dwarf. High-mass stars continue fusion, forming heavier elements until iron, leading to a supernova explosion. The core collapses to form a neutron star or black hole, while the material ejected enriches future star formation. </p>
         </div>
         </div>
+
         <h2 class="section-title">⋆⭒˚.⋆ These are some fascinating stars ⋆⭒˚.⋆</h2>
         <div class="main-content">
             <div class="card stars-info">
+                <figure class="effect-bubba">
+                    <a href="https://pacrowther.sites.sheffield.ac.uk/r136a1-faqs" id="buttonClicked" target="_blank"
+                        title="More curious?" class="other-links">
                 <h2>R136a1</h2>
                 <p>is a stellar object located in the Large Magellanic Cloud (LMC), a satellite galaxy of the Milky Way. It is one of the most massive known stars, with an estimated mass over 250 times that of the Sun. R136a1 is part of the R136 star cluster, which is located in the Tarantula Nebula within the LMC.</p>
+                    </a>
+            </figure>
             </div>
+
             <div class="card stars-info">
+                <figure class="effect-bubba">
+                    <a href="https://www.skyatnightmagazine.com/space-science/uy-scuti" id="buttonClicked2" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>UY Scuti</h2>
                 <p>UY Scuti is a red supergiant star located in the constellation of Scutum.it is often given the accolade of the Universe's biggest star.You could fill UY Scuti up with 5 billion Suns, 7 trillion Jupiters or 7 quadrillion Earths.</p>
+                    </a>
+                </figure>
             </div>
+
             <div class="card stars-info">
+                <figure class="effect-bubba">
+                    <a href="https://earthsky.org/brightest-stars/blue-white-rigel-is-orions-brightest-star/" id="buttonClicked3" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>Rigel</h2>
                 <p>Rigel is a prominent blue supergiant star located in the constellation Orion. It is one of the brightest stars in the night sky and is easily visible to the naked eye. The name Rigel derives from an Arabic term meaning “the left leg of the giant,” which translates to "the left leg of the giant (Orion)." Its one of the major stars forming Orion's figure, specifically representing the left leg of it.</p>
+                </a>
+                </figure>
             </div>
+
             <div class="card stars-info">
+                <figure class="effect-bubba">
+                    <a href="linkforstar4" id="buttonClicked4" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>Star 4</h2>
                 <p>Description of the star goes here...</p>
+                    </a>
+                </figure>
             </div>
+
             <div class="card stars-info">
+                <figure class="effect-bubba">
+                    <a href="linkforstar5" id="buttonClicked5" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>Star 5</h2>
                 <p>Description of the star goes here...</p>
+                </a>
+                </figure>
             </div>
         </div>
     </div>
