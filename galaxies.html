@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JSProject.js"></script>
+
     <title>Galaxies</title>
     <style>
         /* CSS Styles */
@@ -147,6 +149,55 @@
             color: #fff;
             font-size: 24px;
         }
+
+        .other-links {
+            text-decoration: none;
+            color: #fff;
+
+        }
+/* - */
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+        }
+
+        .grid figure figcaption {
+            padding: 1em;
+        }
+
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+        }
+
+        /* here text p is come */
+        figure.effect-bubba p {
+            padding: 20px 1.5em;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+        }
+
+        figure.effect-bubba:hover figcaption::before,
+        figure.effect-bubba:hover figcaption::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-bubba:hover h2,
+        figure.effect-bubba:hover p {
+            opacity: 5;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+
+
     </style>
 </head>
 
@@ -203,32 +254,67 @@
         <h2 class="section-title">⋆⭒˚.⋆ These are some fascinating galaxies ⋆⭒˚.⋆</h2>
         <div class="main-content">
             <div class="card galaxy-info">
+                <figure class="effect-bubba">
+                        <a href="https://www.discovermagazine.com/the-sciences/10-facts-you-may-not-know-about-the-milky-way" id="buttonClicked" target="_blank"
+                            title="More curious?" class="other-links">
                 <h2>Milky Way</h2>
                 <p>Our home galaxy is called the <strong>Milky Way</strong>. It’s a spiral galaxy with a disk of stars spanning more than 100,000 light-years. Earth is located along one of the galaxy’s spiral arms, about halfway from the center. Our solar system takes about 240 million years to orbit the Milky Way just once.<br><br>From our perspective on Earth, the Milky Way looks like a faint, milky band of light arcing across the entire sky, which is how it got its name.</p>
+                        </a>
+                </figure>
             </div>
+
             <div class="card galaxy-info">
+                <figure class="effect-bubba">
+                        <a href="https://www.constellation-guide.com/antennae-galaxies/" id="buttonClicked2" target="_blank"
+                            title="More curious?" class="other-links">
                 <h2>Antennae Galaxies</h2>
                 <p><strong>The Antennae Galaxies,</strong> also known as the Ringtail Galaxy, are a pair of colliding galaxies located in the constellation Corvus. The collision has produced two long tails of stars.<br><br>The Antennae Galaxies are one of the youngest examples of colliding galaxies, as well as one of the nearest pairs of interacting galaxies to Earth. The merging galaxies reveal a likely future of the Milky Way when it collides with the neighbouring Andromeda Galaxy (Messier 31) in several billion years.</p>
+                </a>
+                </figure>
             </div>
+
             <div class="card galaxy-info">
+                <figure class="effect-bubba">
+                    <a href="https://www.skyatnightmagazine.com/astrophotography/galaxies/leo-triplet" id="buttonClicked3" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>The Leo Triplet of Galaxies</h2>
                 <p><strong>The Leo Triplet</strong> is an interesting group of 3 galaxies that are often observed and photographed within a single field of view.
 
                     The Leo Triplet includes spiral galaxies M65, M66, and NGC 3628. This group of galaxies is also known as the M66 group, and is found in the constellation Leo. 
                     
                     Each one of the galaxies is tilted at a different angle, making them all appear quite different from each other from our vantage point on Earth.</p>
+                    </a>
+                    <figure class="effect-bubba">
             </div>
+
             <div class="card galaxy-info">
+                <figure class="effect-bubba">
+                    <a href="https://www.space.com/15590-andromeda-galaxy-m31.html" id="buttonClicked4" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>Andromeda Galaxy</h2>
                 <p><strong>The Andromeda Galaxy,</strong> also called Messier 31 or M31, our nearest large neighbor galaxy {the Milky Way} , Visible to the naked eye even under moderate conditions, this object was known as the "little cloud" to the Persian astronomer Abd-al-Rahman Al-Sufi, who described and depicted it in 964 AD in his Book of Fixed Stars.</p>
+                    </a>
+            </figure>
+
             </div>
             <div class="card galaxy-info">
+                <figure class="effect-bubba">
+                    <a href="https://astrodrudis.com/ngc-1232/" id="buttonClicked5" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>NGC 1232 Galaxy</h2>
                 <p><strong>NGC 1232</strong> is an intermediate spiral galaxy about 60 million light-years away in the constellation Eridanus. It was discovered by German-British astronomer William Herschel on 20 October 1784.<br><br><br><br><strong>NGC 1232A </strong> is a satellite galaxy of NGC 1232.   It is thought to be the cause of unusual bending in the spiral arms.  </p>
+                    </a>
+            </figure>
             </div>
+
             <div class="card galaxy-info">
+                <figure class="effect-bubba">
+                    <a href="https://www.jpl.nasa.gov/images/pia22092-arp-142-the-penguin-and-the-egg" id="buttonClicked6" target="_blank"
+                    title="More curious?" class="other-links">
                 <h2>The penguin & the egg Galaxy</h2>
                 <p>This interacting galaxy duo is collectively called<strong> Arp 142 </strong>. NGC 2936, once a standard spiral galaxy, and NGC 2937, a smaller elliptical, bear a striking resemblance to a penguin guarding its egg.<br><br>Above the pair, an unrelated, lone, bluish galaxy, inconsistently cataloged as UGC 5130, appears to be an elongated irregular or an edge-on spiral.  </p>
+                    </a>
+            </figure>
             </div>
         </div>
     </div>
