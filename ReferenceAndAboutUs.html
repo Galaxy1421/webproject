@@ -122,8 +122,56 @@
             padding: 20px;
             margin-bottom: 20px;
             color: #fff;
+            transition: transform 0.5s ease; /* Add transition for smooth movement */
         }
-      
+
+        .about-section p {
+           
+            border: 1px solid #406ab2;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+        }
+
+        .grid figure figcaption {
+            padding: 1em;
+        }
+
+        figure.effect-bubba h2 {
+            padding-top: 10%;
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+        }
+
+        figure.effect-bubba p {
+            padding: 20px 1.5em;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+        }
+
+        figure.effect-bubba:hover figcaption::before,
+        figure.effect-bubba:hover figcaption::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        figure.effect-bubba:hover h2,
+        figure.effect-bubba:hover p {
+            opacity: 5;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
     </style>
 </head>
 <body style="cursor: url('Star Normal.cur')">
@@ -147,30 +195,51 @@
         <div class="main-content">
         </div>
     </div>
-    <div class="about-section">
+    <div class="about-section" id="about-section">
         <p>Welcome to our creative hub! We are a vibrant team of passionate students, each bringing a unique blend of innovative thinking and enthusiasm to the table. United by our love for crafting digital experiences, we’ve embarked on a journey through the dynamic world of web development as part of our coursework. Our project is more than just an assignment; it’s a canvas where we paint our ideas and bring them to life. We believe in the power of collaboration, the thrill of problem-solving, and the joy of building something from the ground up. Join us as we explore the endless possibilities of the internet and create a footprint that reflects our collective vision and dedication.</p>
     </div>
     <div class="team-container">
         <div class="team-member">
+            <figure class="effect-bubba">
             <h3>Juri Almukhizeem</h3>
             <p>computer science Senior student at Imam Mohammad University in Riyadh with experience in Data analysis and machine learning, game 
                 development and design. Skilled in drawing, designing interfaces, Java, and Python currently finishing my bachelor’s degree and seeking future 
                 training opportunities, I have a passion for learning new skills and continuously challenging myself to grow both personally and professionally.</p>
             <p>juri2014muk@gmail.com</p>
+            </figure>
         </div>
         <div class="team-member">
+            <figure class="effect-bubba">
             <h3>Ghaida Alessa</h3>
             <p>.*°٠⟡˚₊ I have been obsessed with space and everything related to it<strong>" astrophile person"</strong> since my childhood,I see it as a mysterious, attractive and amazing world. I call myself Galaxy (˶ᵔ ᵕ ᵔ˶), It is very clear why I chose my project to be about space. .*°٠⟡˚₊<br><br>gessa.1421@icloud.com</p>
+        </figure>
         </div>
         <div class="team-member">
+            <figure class="effect-bubba">
             <h3>Renad aljumah</h3>
             <p>✰ Since childhood, i've been enchanted by the stars, galaxies and nebulas . Their beauty sparks an insatiable curiosity within me. Every glimmer in the night sky fuels my desire to explore the wonders of the universe. ✰<br><br>Renadaljumah@hotmail.com</p>
+            </figure>
         </div>
     </div>
     <footer class="footer">
-        <p>Ghaida&Renad&Juri Content © 2024</p>
-    </footer>
-
-</body>
-
-</html>
+        <p>Ghaida&Renad&Juri Content © 
+        </footer>
+        <script>
+            const aboutSection = document.querySelectorAll('.about-section');
+        
+            aboutSection.forEach(info => {
+                info.addEventListener('mouseover', () => {
+                        info.style.transform = 'translateY(-10px)';
+                    
+                });
+                info.addEventListener('mouseout', () => {
+                        info.style.transform = 'translateY(0)';
+                    
+                });
+            });
+        
+        </script>
+    </body>
+    
+    </html>
+    

@@ -122,13 +122,13 @@
             background-image: url('ThePenguin&Egg.jpg');
         }
       
-        /* Style for description */
+    
         .galaxy-info,
         .more-about-galaxies {
             border: 1px solid #406ab2;
             border-radius: 5px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: #fff;
         }
 
@@ -155,7 +155,7 @@
             color: #fff;
 
         }
-/* - */
+
         figure.effect-bubba h2 {
             padding-top: 10%;
         }
@@ -172,7 +172,6 @@
             transform: translate3d(0, -20px, 0);
         }
 
-        /* here text p is come */
         figure.effect-bubba p {
             padding: 20px 1.5em;
             opacity: 0;
@@ -258,7 +257,7 @@
                         <a href="https://www.discovermagazine.com/the-sciences/10-facts-you-may-not-know-about-the-milky-way" id="buttonClicked" target="_blank"
                             title="More curious?" class="other-links">
                 <h2>Milky Way</h2>
-                <p>Our home galaxy is called the <strong>Milky Way</strong>. It’s a spiral galaxy with a disk of stars spanning more than 100,000 light-years. Earth is located along one of the galaxy’s spiral arms, about halfway from the center. Our solar system takes about 240 million years to orbit the Milky Way just once.<br><br>From our perspective on Earth, the Milky Way looks like a faint, milky band of light arcing across the entire sky, which is how it got its name.</p>
+                <p>Our home galaxy is called the<strong> Milky Way</strong>. It’s a spiral galaxy with a disk of stars spanning more than 100,000 light-years. Earth is located along one of the galaxy’s spiral arms, about halfway from the center. Our solar system takes about 240 million years to orbit the Milky Way just once.<br><br></p>
                         </a>
                 </figure>
             </div>
@@ -268,9 +267,9 @@
                         <a href="https://www.constellation-guide.com/antennae-galaxies/" id="buttonClicked2" target="_blank"
                             title="More curious?" class="other-links">
                 <h2>Antennae Galaxies</h2>
-                <p><strong>The Antennae Galaxies,</strong> also known as the Ringtail Galaxy, are a pair of colliding galaxies located in the constellation Corvus. The collision has produced two long tails of stars.<br><br>The Antennae Galaxies are one of the youngest examples of colliding galaxies, as well as one of the nearest pairs of interacting galaxies to Earth. The merging galaxies reveal a likely future of the Milky Way when it collides with the neighbouring Andromeda Galaxy (Messier 31) in several billion years.</p>
-                </a>
-                </figure>
+                <p><strong>The Antennae Galaxies,</strong> also known as the Ringtail Galaxy, are a pair of colliding galaxies located in the constellation Corvus. The collision has produced two long tails of stars.<br><br>The Antennae Galaxies are one of the youngest examples of colliding galaxies, as well as one of the nearest pairs of interacting galaxies to Earth.</p>
+            </a>    
+            </figure>
             </div>
 
             <div class="card galaxy-info">
@@ -279,10 +278,7 @@
                     title="More curious?" class="other-links">
                 <h2>The Leo Triplet of Galaxies</h2>
                 <p><strong>The Leo Triplet</strong> is an interesting group of 3 galaxies that are often observed and photographed within a single field of view.
-
-                    The Leo Triplet includes spiral galaxies M65, M66, and NGC 3628. This group of galaxies is also known as the M66 group, and is found in the constellation Leo. 
-                    
-                    Each one of the galaxies is tilted at a different angle, making them all appear quite different from each other from our vantage point on Earth.</p>
+                    The Leo Triplet includes spiral galaxies M65, M66, and NGC 3628. This group of galaxies is also known as the M66 group, and is found in the constellation Leo.</p>
                     </a>
                     <figure class="effect-bubba">
             </div>
@@ -322,7 +318,32 @@
     <footer class="footer">
         <p>Ghaida&Renad&Juri Content &copy; 2024</p>
     </footer>
-
+    <script>
+        const galaxyInfo = document.querySelectorAll('.galaxy-info, .more-about-galaxies');
+        const sectionTitle = document.querySelector('.section-title');
+    
+        galaxyInfo.forEach(info => {
+            info.addEventListener('mouseover', () => {
+                if (!info.classList.contains('card')) {
+                    info.style.transform = 'translateY(-10px)';
+                }
+            });
+            info.addEventListener('mouseout', () => {
+                if (!info.classList.contains('card')) {
+                    info.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    
+        sectionTitle.addEventListener('mouseover', () => {
+            sectionTitle.style.transform = 'translateY(-10px)';
+        });
+        sectionTitle.addEventListener('mouseout', () => {
+            sectionTitle.style.transform = 'translateY(0)';
+        });
+    </script>
+    
+ 
 </body>
 
 </html>

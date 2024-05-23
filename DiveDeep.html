@@ -85,6 +85,12 @@
       background-position: center;
       background-color: rgba(64, 106, 178, 0.2);
       cursor: pointer; /* Make cards clickable */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+
+    .card:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); 
     }
 
     .footer {
@@ -96,33 +102,33 @@
       margin-top: 20px;
     }
 
+    .card:nth-child(1) {
+      background-image: url('littledumbell.png');
+    }
 
-        .card:nth-child(1) {
-            background-image: url('littledumbell.png');
-        }
+    .card:nth-child(2) {
+      background-image: url('ButterflyNebula.jpg');
+    }
 
-        .card:nth-child(2) {
-            background-image: url('ButterflyNebula.jpg');
-        }
+    .card:nth-child(3) {
+      background-image: url('HelixNebula.jpg');
+    }
 
-        .card:nth-child(3) {
-            background-image: url('HelixNebula.jpg');
-        }
+    .card:nth-child(4) {
+      background-image: url('CrabNebula.jpg');
+    }
 
-        .card:nth-child(4) {
-            background-image: url('CrabNebula.jpg');
-        }
+    .card:nth-child(5) {
+      background-image: url('TheEagleNebula.jpg');
+    }
 
-        .card:nth-child(5) {
-            background-image: url('TheEagleNebula.jpg');
-        }
-        .card:nth-child(6) {
-            background-image: url('AntennaeGalaxies.jpg');
-        }
-        .card:nth-child(7) {
-            background-image: url('LeoTripletofGalaxies.jpg');
-        }
-      
+    .card:nth-child(6) {
+      background-image: url('AntennaeGalaxies.jpg');
+    }
+
+    .card:nth-child(7) {
+      background-image: url('LeoTripletofGalaxies.jpg');
+    }
 
     /* Style for description */
     .Dive-deep {
@@ -131,14 +137,7 @@
       padding: 20px;
       margin-bottom: 20px;
       color: #fff;
-    }
-
-    .Dive-deep h2 {
-      margin-top: 0;
-    }
-
-    .Dive-deep p {
-      margin: 0;
+      transition: transform 0.3s ease; /* Add smooth transition */
     }
 
     .section-title {
@@ -147,97 +146,129 @@
       margin-top: 20px;
       color: #fff;
       font-size: 24px;
+      transition: transform 0.3s ease; /* Add smooth transition */
     }
   </style>
 </head>
+
 <body style="cursor: url('Star Normal.cur')">
-    <nav class="navbar">
-      <div class="nav-links">
-        <a href="Main.html" style="cursor: url('Star Link.cur'), pointer;">Home</a>
-        <a href="galaxies.html" style="cursor: url('Star Link.cur'), pointer;">Galaxies</a>
-        <a href="Nebula.html" style="cursor: url('Star Link.cur'), pointer;">Nebula</a>
-        <a href="Stars.html" style="cursor: url('Star Link.cur'), pointer;">Stars</a>
-        <a href="DiveDeep.html" style="cursor: url('Star Link.cur'), pointer;">Dive Deep</a>
-        <a href="ReferenceAndAboutUs.html" style="cursor: url('Star Link.cur'), pointer;">About us</a>
-      </div>
-      <h1>Astrophile</h1>
-    </nav>
-  
-    <div class="container" >
-      <div class="main-content">
-        <div class="Dive-deep">
-          <h2>ᯓ★ What do we mean by Dive deep?</h2>
-          <p>A type of clip called <strong>Zoom into</strong> that depicts space for us from a distant point and dives into the heart of the nebula or galaxy. It captures the beauty of the universe for you, so we loved including it in our project.</p>
-        </div>
-      </div>
-      <h2 class="section-title">⋆⭒˚.⋆ Let's dive into some galaxies and nebulae together ⋆⭒˚.⋆</h2>
-      <div class="main-content" >
-        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">the Little Dumbbell Nebula</h2>
-        </div>
-        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">Butterfly Nebula</h2>
-        </div>
-        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">Helix Nebula</h2>
-        </div>
-        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">Crab Nebula</h2>
-        </div>
-        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">The Eagle Nebula</h2>
-        </div>
-        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">Antennae Galaxies</h2>
-        </div>
-        <div class="card zoom-into"style="cursor: url('Star Link.cur'), pointer;">
-          <h2 style="cursor: url('Star Link.cur'), pointer;">The Leo Triplet of Galaxies</h2>
-        </div>
-      </div>
-  
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="Main.html" style="cursor: url('Star Link.cur'), pointer;">Home</a>
+      <a href="galaxies.html" style="cursor: url('Star Link.cur'), pointer;">Galaxies</a>
+      <a href="Nebula.html" style="cursor: url('Star Link.cur'), pointer;">Nebula</a>
+      <a href="Stars.html" style="cursor: url('Star Link.cur'), pointer;">Stars</a>
+      <a href="DiveDeep.html" style="cursor: url('Star Link.cur'), pointer;">Dive Deep</a>
+      <a href="ReferenceAndAboutUs.html" style="cursor: url('Star Link.cur'), pointer;">About us</a>
     </div>
-  
-    <footer class="footer">
-      <p>Ghaida&Renad&Juri Content &copy; 2024</p>
-    </footer>
-  
-    <script>
-      // Script for clickable cards
-      document.querySelectorAll('.card').forEach(function(card) {
-        card.addEventListener('click', function() {
-          var nebulaName = card.querySelector('h2').textContent;
-          var videoUrl = "https://www.youtube.com/watch?v=";
-            
-          switch (nebulaName) {
-            case 'the Little Dumbbell Nebula':
-              videoUrl += 'rCoXv-BsjQQ';
-              break;
-            case 'Butterfly Nebula':
-              videoUrl += '8ioov7uoQ9E';
-              break;
-            case 'Helix Nebula':
-              videoUrl += 'UwAKNMC2PeM';
-              break;
-            case 'The Eagle Nebula':
-              videoUrl += 'B-wCGoAoIzQ';
-              break;
-            case 'Crab Nebula':
-              videoUrl += 'oJ9qJFQ0EE8';
-              break;
-            case 'Antennae Galaxies':
-            videoUrl += '7kwZWVzq2Ow';
-              break;
-            case 'The Leo Triplet of Galaxies':
-              videoUrl += '-SVlBmzj6E0';
-              break;
-            default:
-              console.log('Unknown nebula:', nebulaName);
-              return;
-          }
-            
-          window.location.href = videoUrl;
-        });
-      });
-    </script>
-  </body>
-  
+    <h1>Astrophile</h1>
+  </nav>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="Dive-deep" id="dive-deep">
+        <h2>ᯓ★ What do we mean by Dive deep?</h2>
+        <p>A type of clip called <strong>Zoom into</strong> that depicts space for us from a distant point and dives into the heart of the nebula or galaxy. It captures the beauty of the universe for you, so we loved including it in our project.</p>
+      </div>
+    </div>
+    <h2 class="section-title" id="section-title">⋆⭒˚.⋆ Let's dive into some galaxies and nebulae together ⋆⭒˚.⋆</h2>
+    <div class="main-content">
+      <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">the Little Dumbbell Nebula</h2>
+      </div>
+      <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">Butterfly Nebula</h2>
+        </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">Helix Nebula</h2>
+        </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">Crab Nebula</h2>
+        </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">The Eagle Nebula</h2>
+        </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">Antennae Galaxies</h2>
+        </div>
+        <div class="card zoom-into" style="cursor: url('Star Link.cur'), pointer;">
+        <h2 style="cursor: url('Star Link.cur'), pointer;">The Leo Triplet of Galaxies</h2>
+        </div>
+        </div>
+        
+          </div>
+          <footer class="footer">
+            <p>Ghaida&Renad&Juri Content &copy; 2024</p>
+          </footer>
+          <script>
+            // JavaScript for movement effect on .Dive-deep section
+            const diveDeepSection = document.getElementById('dive-deep');
+        
+            diveDeepSection.addEventListener('mouseover', function() {
+              this.style.transform = 'translateY(-10px)';
+            });
+        
+            diveDeepSection.addEventListener('mouseout', function() {
+              this.style.transform = 'translateY(0)';
+            });
+        
+            // JavaScript for movement effect on .section-title
+            const sectionTitle = document.getElementById('section-title');
+        
+            sectionTitle.addEventListener('mouseover', function() {
+              this.style.transform = 'translateY(-10px)';
+            });
+        
+            sectionTitle.addEventListener('mouseout', function() {
+              this.style.transform = 'translateY(0)';
+            });
+        
+            // Script for clickable cards
+            document.querySelectorAll('.card').forEach(function(card) {
+              card.addEventListener('click', function() {
+                var nebulaName = card.querySelector('h2').textContent;
+                var videoUrl = "https://www.youtube.com/watch?v=";
+        
+                switch (nebulaName) {
+                  case 'the Little Dumbbell Nebula':
+                    videoUrl += 'rCoXv-BsjQQ';
+                    break;
+                  case 'Butterfly Nebula':
+                    videoUrl += '8ioov7uoQ9E';
+                    break;
+                  case 'Helix Nebula':
+                    videoUrl += 'UwAKNMC2PeM';
+                    break;
+                  case 'The Eagle Nebula':
+                    videoUrl += 'B-wCGoAoIzQ';
+                    break;
+                  case 'Crab Nebula':
+                    videoUrl += 'oJ9qJFQ0EE8';
+                    break;
+                  case 'Antennae Galaxies':
+                    videoUrl += '7kwZWVzq2Ow';
+                    break;
+                  case 'The Leo Triplet of Galaxies':
+                    videoUrl += '-SVlBmzj6E0';
+                    break;
+                  default:
+                    console.log('Unknown nebula:', nebulaName);
+                    return;
+                }
+        
+                window.location.href = videoUrl;
+              });
+            });
+        
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+                });
+              });
+            });
+          </script>
+        </body>
+        </html>

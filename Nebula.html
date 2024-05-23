@@ -143,7 +143,7 @@
             border: 1px solid #406ab2;
             border-radius: 5px;
             padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             color: #fff;
         }
 
@@ -383,6 +383,30 @@
         <p>Ghaida&Renad&Juri Content &copy; 2024</p>
 
     </footer>
+    <script>
+        const nebulaInfo = document.querySelectorAll('.nebula-info, .how-stars-form');
+        const sectionTitle = document.querySelector('.section-title');
+    
+        nebulaInfo.forEach(info => {
+            info.addEventListener('mouseover', () => {
+                if (!info.classList.contains('card')) {
+                    info.style.transform = 'translateY(-10px)';
+                }
+            });
+            info.addEventListener('mouseout', () => {
+                if (!info.classList.contains('card')) {
+                    info.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    
+        sectionTitle.addEventListener('mouseover', () => {
+            sectionTitle.style.transform = 'translateY(-10px)';
+        });
+        sectionTitle.addEventListener('mouseout', () => {
+            sectionTitle.style.transform = 'translateY(0)';
+        });
+    </script>
 
 </body>
 
