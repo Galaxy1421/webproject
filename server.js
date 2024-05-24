@@ -1,5 +1,6 @@
 const { MongoClient } = require('mongodb');
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = 3000;
 
@@ -11,6 +12,9 @@ let database, collection;
 // Middleware to parse JSON and URL-encoded bodies
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Middleware to serve static files from the current directory
+app.use(express.static(__dirname));
 
 client.connect()
   .then(() => {
@@ -25,7 +29,7 @@ client.connect()
 
 function startServer() {
   app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/Nebula.html');
+    res.sendFile(path.join(__dirname, 'Nebula.html'));
   });
 
   app.post('/submit-vote', async (req, res) => {
@@ -47,6 +51,7 @@ function startServer() {
       res.status(500).send('Internal server error');
     }
   });
+
   app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
   });

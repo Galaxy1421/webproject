@@ -173,7 +173,7 @@
         }
         .vote-title {
             border-top: 1px solid #406ab2;
-            padding-top: 20px;
+            padding-top: 10px;
             margin-top: 20px;
             color: #fff;
             font-size: 15px;
@@ -186,8 +186,6 @@
             color: #fff;
 
         }
-
-    
         figure.effect-bubba h2 {
             padding-top: 10%;
         }
@@ -203,8 +201,6 @@
             -webkit-transform: translate3d(0, -20px, 0);
             transform: translate3d(0, -20px, 0);
         }
-
-        /* here text p is come */
         figure.effect-bubba p {
             padding: 20px 1.5em;
             opacity: 0;
@@ -274,33 +270,17 @@
         <h1 class="vote-title">⋆⭒˚.⋆Vote for your favorite nebula ⋆⭒˚.⋆</h1>
         </div>
         <div class="vote">
-        <form id="voteForm" action="/submit-vote" method="post">
-          <label>
-            <input type="radio" name="nebula" value="Butterfly Nebula">
-            Butterfly Nebula
-          </label>
-          <label>
-            <input type="radio" name="nebula" value="Little Dumbbell Nebula">
-            Little Dumbbell Nebula
-          </label>
-          <label>
-            <input type="radio" name="nebula" value="The Eagle Nebula">
-            The Eagle Nebula
-          </label>
-          <label>
-            <input type="radio" name="nebula" value="Crab Nebula">
-            Crab Nebula
-          </label>
-          <label>
-            <input type="radio" name="nebula" value="The North America Nebula">
-            The North America Nebula
-          </label>
-          <label>
-            <input type="radio" name="nebula" value="Helix Nebula">
-            Helix Nebula
-          </label>
-          <button type="submit">Submit</button>
-        </form>
+            <form id="voteForm" action="/submit-vote" method="post">
+                <select id="nebula" name="nebula" class="button">
+                    <option value="butterfly">Butterfly Nebula</option>
+                    <option value="dumbell">Little Dumbell</option>
+                    <option value="helix">Helix Nebula</option>
+                    <option value="eagle">The Eagle Nebula</option>
+                    <option value="crab">Crab Nebula</option>
+                    <option value="northAmerica">North America Nebula</option>
+                </select>
+                <input type="submit" value="Submit Vote" class="button">
+            </form>
         </div>
         <div class="main-content">
 
