@@ -164,16 +164,30 @@
             color: #fff;
             font-size: 24px;
         }
-
+    
+        .vote {
+            padding-top: 20px;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 13px;
+        }
+        .vote-title {
+            border-top: 1px solid #406ab2;
+            padding-top: 20px;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+        }
         .other-links {
             text-decoration: none;
             color: #fff;
 
         }
 
-        /* --------------------------------------------- */
-
-        /* Style p + h  */
+    
         figure.effect-bubba h2 {
             padding-top: 10%;
         }
@@ -253,7 +267,41 @@
                     the center of the cloud to heat up-and this hot core is the beginning of a star.</p>
             </div>
         </div>
+        <div>
         <h2 class="section-title">⋆⭒˚.⋆ These are some interesting nebulae ⋆⭒˚.⋆</h2>
+        </div>
+        <div>
+        <h1 class="vote-title">⋆⭒˚.⋆Vote for your favorite nebula ⋆⭒˚.⋆</h1>
+        </div>
+        <div class="vote">
+        <form id="voteForm" action="/submit-vote" method="post">
+          <label>
+            <input type="radio" name="nebula" value="Butterfly Nebula">
+            Butterfly Nebula
+          </label>
+          <label>
+            <input type="radio" name="nebula" value="Little Dumbbell Nebula">
+            Little Dumbbell Nebula
+          </label>
+          <label>
+            <input type="radio" name="nebula" value="The Eagle Nebula">
+            The Eagle Nebula
+          </label>
+          <label>
+            <input type="radio" name="nebula" value="Crab Nebula">
+            Crab Nebula
+          </label>
+          <label>
+            <input type="radio" name="nebula" value="The North America Nebula">
+            The North America Nebula
+          </label>
+          <label>
+            <input type="radio" name="nebula" value="Helix Nebula">
+            Helix Nebula
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        </div>
         <div class="main-content">
 
             <!-- onclick="return alert('Please click on OK to continue.');" -->
@@ -372,9 +420,9 @@
                 <br>
                 <br>
                 <a href="DiveDeep.html"  style="cursor: url('Star Link.cur'), pointer;"> <input style="cursor: url('Star Link.cur'), pointer;" class ="button" type="button" value="Video" /> </a>
+
             </div>
-
-
+           
         </div>
     </div>
 
